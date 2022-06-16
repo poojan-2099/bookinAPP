@@ -2,8 +2,12 @@ import express from "express";
 
 const router= express.Router();
 
-router.get("/", (req,res)=>{
-    res.send("Hellow ");
+router.get("/", async  (req,res)=>{
+    try{
+
+    }catch(err){
+        res.status(500).json(err)
+    }
 })
 
 export default router;
